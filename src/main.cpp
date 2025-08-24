@@ -6,9 +6,9 @@
 int main() {
     std::cout << "QuantaQuilida application starting..." << std::endl;
 
-    FactChecker factChecker;
-    BiasAnalyzer biasAnalyzer;
-    Reporting reporting;
+    FactChecker factChecker(std::cout);
+    BiasAnalyzer biasAnalyzer(std::cout);
+    Reporting reporting(std::cout);
 
     factChecker.check();
     biasAnalyzer.analyze();

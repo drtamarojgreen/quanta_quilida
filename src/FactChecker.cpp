@@ -1,10 +1,9 @@
 #include "FactChecker.h"
-#include <iostream>
 
-FactChecker::FactChecker() {
+FactChecker::FactChecker(std::ostream& out) : out_stream(out) {
     // Constructor
 }
 
 void FactChecker::check() {
-    std::cout << "FactChecker is checking..." << std::endl;
+    out_stream << "FactChecker is checking..." << std::endl;
 }
