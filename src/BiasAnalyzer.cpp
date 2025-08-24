@@ -1,10 +1,9 @@
 #include "BiasAnalyzer.h"
-#include <iostream>
 
-BiasAnalyzer::BiasAnalyzer() {
+BiasAnalyzer::BiasAnalyzer(std::ostream& out) : out_stream(out) {
     // Constructor
 }
 
 void BiasAnalyzer::analyze() {
-    std::cout << "BiasAnalyzer is analyzing..." << std::endl;
+    out_stream << "BiasAnalyzer is analyzing..." << std::endl;
 }

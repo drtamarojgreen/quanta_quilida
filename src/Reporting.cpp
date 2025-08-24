@@ -1,10 +1,9 @@
 #include "Reporting.h"
-#include <iostream>
 
-Reporting::Reporting() {
+Reporting::Reporting(std::ostream& out) : out_stream(out) {
     // Constructor
 }
 
 void Reporting::generateReport() {
-    std::cout << "Reporting is generating a report..." << std::endl;
+    out_stream << "Reporting is generating a report..." << std::endl;
 }
